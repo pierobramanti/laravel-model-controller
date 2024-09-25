@@ -7,15 +7,7 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('layouts.partials.header')
     <div class="main">
         @yield('content')
     </div>
