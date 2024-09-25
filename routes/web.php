@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController As PageController;
+use App\Http\Controllers\PageController as PageController;
+use App\Http\Controllers\MovieController as MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,5 @@ use App\Http\Controllers\PageController As PageController;
 //    return view('home');
 //});
 
-Route::get('/',[PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('homepage');
+Route::get('/movies', [MovieController::class, 'index'])->name('movies');
