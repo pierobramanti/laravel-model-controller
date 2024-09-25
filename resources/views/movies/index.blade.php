@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+@php
+var_dump($movie);
+@endphp
     <div class="container">
         <div class="row">
             <div class="col-12">
